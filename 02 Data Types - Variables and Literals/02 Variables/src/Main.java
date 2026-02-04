@@ -1,57 +1,68 @@
 public class Main {
     static void main(String[] args) {
-        //variables are name given to some data
-        //RULES to DECLARE VARIABLE NAMES
+        // Variables are containers that store data values
+        // Syntax: dataType variableName = value;
+
+        // RULES TO DECLARE VARIABLE NAMES
         /*
-        1. Variables are case-sensitive NAME != name
-        2. Contains Alphabets, numbers, or _, $
-        3. can start only with alphabet, _ or $
-        4. should not have keyword
-        5. Not use built in class names
-        6. Can not contain space follow camel Cases
+        1. Case-sensitive: NAME != name != Name (each is different)
+        2. Can contain: letters, digits, underscore (_), or dollar sign ($)
+        3. Must start with: letter, underscore (_), or dollar sign ($) - NOT a digit
+        4. Cannot be a Java keyword (int, float, class, etc.)
+        5. Cannot be a built-in class name (String, Integer, etc.)
+        6. Should follow camelCase convention and be meaningful
          */
 
-        //1.
+        // Example 1: Case sensitivity
         String name = "Ankit";
         String NAME = "Anki";
         String Name = "Anku";
+        System.out.println(name + ", " + NAME + ", " + Name);  // All three are different variables
 
-        System.out.println(name);  //Ankit
-        System.out.println(NAME);  //Anki
-        System.out.println(Name);   //Anku
+        // Example 2: Valid variable names with _ and $
+        int _a = 5;      // Starts with underscore
+        int $b = 10;     // Starts with dollar sign
+        System.out.println(_a + $b);   // 15
 
-        //2.
-        int _a = 5;
-        int $b = 10;
-        System.out.println(_a+$b);   //15
+        // Example 3: Invalid - cannot start with a digit
+        // int 5a = 10;
 
-        //3.
-        //int 5a= 10; //not allowed can not start with number or any special character except _ and $
+        // Example 4: Invalid - reserved keywords cannot be used
+        // int float = 5;
 
-        //4.
-        //int float = 5;      //float is reserved cant be used as a variable name
-        //int break  = 10;
+        // PRIMITIVE DATA TYPES in Java:
 
+        // 1. byte: 8-bit integer (-128 to 127)
+        byte b = 5;
+        System.out.println("byte b: " + b);
 
-        byte b = 5;           // -128 to 127    //byte is data type b is variable name
-        //b = 129;           //out of range and will be treated as int and byte cant store int
-        System.out.println(b);
+        // 2. int: 32-bit integer (default for whole numbers)
+        int x = 20, y = 10;
+        int sum = x + y;
+        System.out.println("int sum: " + sum);
 
-        int x, y, sum;        //declaration
-        x = 20;
-        y = 10;
-        sum = x + y;
-        System.out.println(sum);
-
+        // 3. short: 16-bit integer (-32,768 to 32,767)
         short s = 123;
+        System.out.println("short s: " + s);
 
-        char c = 'A';
-
-        float f = 1.6f;
+        // 4. long: 64-bit integer (use L suffix)
         long l = 178L;
+        System.out.println("long l: " + l);
+
+        // 5. float: 32-bit decimal (use f suffix)
+        float f = 1.6f;
+        System.out.println("float f: " + f);
+
+        // 6. double: 64-bit decimal (default for decimals)
         double d = 1.677d;
+        System.out.println("double d: " + d);
 
-        System.out.println(l);
+        // 7. char: Single character (use single quotes)
+        char c = 'A';
+        System.out.println("char c: " + c);
 
+        // 8. String: Reference type for text (use double quotes)
+        String text = "Hello Java";
+        System.out.println("String text: " + text);
     }
 }
