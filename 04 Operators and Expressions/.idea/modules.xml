@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01 Arithmetic Operators/01 Arithmetic Operators.iml" filepath="$PROJECT_DIR$/01 Arithmetic Operators/01 Arithmetic Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02 Increment_Decrement Operators/02 Increment_Decrement Operators.iml" filepath="$PROJECT_DIR$/02 Increment_Decrement Operators/02 Increment_Decrement Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03 Bitwise Operators/03 Bitwise Operators.iml" filepath="$PROJECT_DIR$/03 Bitwise Operators/03 Bitwise Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04 Bit Masking and Merging/04 Bit Masking and Merging.iml" filepath="$PROJECT_DIR$/04 Bit Masking and Merging/04 Bit Masking and Merging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/04 Operators and Expressions.iml" filepath="$PROJECT_DIR$/.idea/04 Operators and Expressions.iml" />
+    </modules>
+  </component>
+</project>
